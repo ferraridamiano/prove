@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "weekly"
+
+- package-ecosystem: "pub"
+  directories:
+    - "/"
+    - "/packages/calculator_widget"
+    - "/packages/translations"
+  schedule:
+    interval: "monthly"
+  ignore:
+  - dependency-name: "*"
+    update-types:
+    - "version-update:semver-patch"
+    - "version-update:semver-minor"
