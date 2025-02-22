@@ -94,4 +94,4 @@ flutter:
         - package: vector_graphics_compiler
           # This is added because with this optimizations sometime it is not
           # possible to compile the app
-          args: ['--no-optimize-masks', '--no-optimize-clips']
+          args: ['--no-optimize-masks', '--no-optimize-clips', '--no-tessellate', '--no-optimize-overdraw']
