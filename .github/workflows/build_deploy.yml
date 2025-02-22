@@ -43,7 +43,7 @@ jobs:
 
     - name: Bootstrap
       run: |
-        dart pub global activate melos
+        flutter pub global activate melos
         melos bootstrap
 
     - name: Build for linux
