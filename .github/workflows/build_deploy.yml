@@ -34,6 +34,8 @@ jobs:
     - name: Setup Flutter
       run: |
         git clone --depth 1 --branch stable https://github.com/flutter/flutter.git $RUNNER_TEMP/flutter
+        cd $RUNNER_TEMP/flutter
+        git fetch origin master:refs/remotes/origin/master
         echo "$RUNNER_TEMP/flutter/bin" >> $GITHUB_PATH
         echo "$HOME/.pub-cache/bin" >> $GITHUB_PATH
 
